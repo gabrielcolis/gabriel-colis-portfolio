@@ -1,20 +1,71 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 💼 Portfólio — Gabriel Henrique Colis
 
-# Run and deploy your AI Studio app
+Este projeto é meu portfólio profissional como **Programador Júnior** e **Estudante de Engenharia de Software**.  
+O objetivo é apresentar minha identidade técnica, stack principal e projetos, utilizando uma abordagem **moderna, minimalista e conceitual**, com foco em performance, clareza e impacto visual.
 
-This contains everything you need to run your app locally.
+O layout explora animações em **HTML5 Canvas**, interações sutis e uma hierarquia visual forte, evitando aparência de templates prontos.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1T9aL6dAtx6hHrVdeU_18hrleppkJJ50H
+---
 
-## Run Locally
+## 🚀 Tecnologias Utilizadas
 
-**Prerequisites:**  Node.js
+- React
+- TypeScript
+- Vite
+- HTML5 Canvas
+- CSS moderno (layout e animações)
+- JavaScript
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🧠 Conceitos e Conhecimentos Aplicados
+
+- Componentização com React
+- Estruturação de aplicações frontend modernas
+- Animações performáticas com Canvas
+- Interatividade baseada em eventos de mouse
+- Hierarquia visual e design minimalista
+- Organização de código e boas práticas
+- Build e deploy automatizado com Vite + Vercel
+- Versionamento com Git e GitHub
+
+---
+
+## 🎨 Destaques do Projeto
+
+- Hero section animada inspirada em conceitos técnicos (Matrix / software systems)
+- Efeito de foco visual com gradiente de opacidade
+- Interações suaves e não intrusivas
+- Layout limpo, profissional e responsivo
+- Código organizado e facilmente extensível
+
+---
+
+## 📂 Estrutura do Projeto
+
+- `components/` — Componentes React reutilizáveis
+- `public/` — Assets estáticos
+- `App.tsx` — Estrutura principal da aplicação
+- `vite.config.ts` — Configuração do build
+- `tsconfig.json` — Configuração TypeScript
+
+---
+
+## 🌐 Deploy
+
+O projeto está hospedado na **Vercel**, com deploy automático a cada push na branch `main`.
+
+🔗 **Portfólio online:**  
+https://gabriel-colis-portfolio.vercel.app/
+---
+
+## 📫 Contato
+
+- GitHub: https://github.com/gabrielcolis  
+- LinkedIn: https://www.linkedin.com/in/gabrielcolis/
+
+---
+
+## 📌 Observação
+
+Este portfólio é um projeto em constante evolução e reflete minha experiência prática atual como desenvolvedor.
