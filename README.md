@@ -1,4 +1,4 @@
-# 💼 Portfólio — Gabriel Henrique Colis
+# Portfólio — Gabriel Henrique Colis
 
 Este projeto é meu portfólio profissional como **Programador Júnior** e **Estudante de Engenharia de Software**.  
 O objetivo é apresentar minha identidade técnica, stack principal e projetos, utilizando uma abordagem **moderna, minimalista e conceitual**, com foco em performance, clareza e impacto visual.
@@ -7,7 +7,7 @@ O layout explora animações em **HTML5 Canvas**, interações sutis e uma hiera
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - React
 - TypeScript
@@ -18,7 +18,7 @@ O layout explora animações em **HTML5 Canvas**, interações sutis e uma hiera
 
 ---
 
-## 🧠 Conceitos e Conhecimentos Aplicados
+## Conceitos e Conhecimentos Aplicados
 
 - Componentização com React
 - Estruturação de aplicações frontend modernas
@@ -31,7 +31,7 @@ O layout explora animações em **HTML5 Canvas**, interações sutis e uma hiera
 
 ---
 
-## 🎨 Destaques do Projeto
+## Destaques do Projeto
 
 - Hero section animada inspirada em conceitos técnicos (Matrix / software systems)
 - Efeito de foco visual com gradiente de opacidade
@@ -41,7 +41,7 @@ O layout explora animações em **HTML5 Canvas**, interações sutis e uma hiera
 
 ---
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 - `components/` — Componentes React reutilizáveis
 - `public/` — Assets estáticos
@@ -51,7 +51,7 @@ O layout explora animações em **HTML5 Canvas**, interações sutis e uma hiera
 
 ---
 
-## 🌐 Deploy
+## Deploy
 
 O projeto está hospedado na **Vercel**, com deploy automático a cada push na branch `main`.
 
@@ -59,13 +59,13 @@ O projeto está hospedado na **Vercel**, com deploy automático a cada push na b
 https://gabriel-colis-portfolio.vercel.app/
 ---
 
-## 📫 Contato
+## Contato
 
 - GitHub: https://github.com/gabrielcolis  
 - LinkedIn: https://www.linkedin.com/in/gabrielcolis/
 
 ---
 
-## 📌 Observação
+## Observação
 
 Este portfólio é um projeto em constante evolução e reflete minha experiência prática atual como desenvolvedor.
