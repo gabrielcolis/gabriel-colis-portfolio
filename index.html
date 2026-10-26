@@ -1,68 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabriel Henrique Colis | Software Engineer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Gabriel Colis · Full Stack Software Engineer</title>
+  <meta name="description" content="Gabriel Colis, full stack software engineer in Curitiba. Rebuilt a salon-management SaaS serving 10,000+ professionals from scratch with Next.js, TypeScript and PostgreSQL. Open to backend and full-stack roles.">
+  <meta name="theme-color" content="#0A0826">
+  <meta name="color-scheme" content="dark">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gabriel Colis · Full Stack Software Engineer">
+  <meta property="og:description" content="Rebuilt a salon-management SaaS serving 10,000+ professionals from scratch. Java, Grails, Next.js, TypeScript, PostgreSQL. Open to work.">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/favicon.png" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #000000;
-      overflow-x: hidden;
-    }
-
-    /* Custom Scrollbar for Webkit */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 4px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    .gradient-text {
-      background: linear-gradient(to right, #4285F4, #9B72CB);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
-      /* Padding to prevent letter clipping on italic/tight fonts */
-      padding-right: 0.05em;
-      display: inline-block;
-    }
-  </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
-  }
-}
-</script>
-  <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600;700;800&family=JetBrains+Mono:wght@400;500&family=Cinzel:wght@600;700&display=swap">
 </head>
-
 <body>
-  <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+<canvas id="scene" aria-hidden="true"></canvas>
 
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span>Gabriel Colis</span></a>
+    <nav aria-label="Main">
+      <a href="#experience">Experience</a>
+      <a href="#about">About</a>
+      <a href="#bring">What I bring</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a class="cv" href="https://www.linkedin.com/in/gabrielcolis" target="_blank" rel="noopener">LinkedIn</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="rail" aria-label="Sections">
+  <a href="#experience" data-s="experience"><span></span>Experience</a>
+  <a href="#about" data-s="about"><span></span>About</a>
+  <a href="#bring" data-s="bring"><span></span>What I bring</a>
+  <a href="#projects" data-s="projects"><span></span>Projects</a>
+  <a href="#contact" data-s="contact"><span></span>Contact</a>
+</nav>
+
+<div class="vlabel" aria-hidden="true">JAVA — NEXT.JS — AI — OPEN TO WORK</div>
+<div class="hud" aria-hidden="true"><span>SCROLL</span><span class="bar"><i id="hudbar"></i></span><span id="hudtxt">000 / 100</span></div>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="grid">
+      <div style="flex:1 1 560px;min-width:0">
+        <div class="who"><img src="/img/avatar.webp" alt="Gabriel Colis" width="56" height="56"><p class="eyebrow" style="color:var(--fg);letter-spacing:.22em;font-size:12px;margin:0">FULL STACK SOFTWARE ENGINEER · CURITIBA, BR</p></div>
+        <h1>I keep legacy systems alive and <b>build what comes next.</b></h1>
+      </div>
+      <div class="side">
+        <p>I took over a legacy Java/Grails SaaS, then rebuilt the whole platform from scratch with Next.js and TypeScript. It now serves 10,000+ salon and clinic professionals.</p>
+        <div class="btns" style="align-items:center;gap:28px">
+          <a class="circ" href="#experience"><i>↘</i>View my work</a>
+          <a class="btn ghost" href="#contact">Hire me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee" aria-label="Technologies I use">
+    <div class="track" id="t1"></div>
+    <div class="track rev" id="t2"></div>
+  </div>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <p class="eyebrow">EXPERIENCE</p>
+      <h2>From legacy maintainer to building the new platform.</h2>
+      <div class="exp">
+        <article class="panel main tilt">
+          <div class="row"><h3 style="font-size:26px">Software Developer</h3><span class="date">May 2025 — present</span></div>
+          <p style="margin:6px 0 0;color:var(--accent);font-weight:600">CWB Tecnologia · Curitiba</p>
+          <p class="muted" style="margin:16px 0 0">Full-stack developer on Programa Salão and Up Agenda, a scheduling and management SaaS for beauty salons, barbershops and clinics.</p>
+          <ul>
+            <li>Built the new platform (upagenda.com.br and app.programasalao.com.br) from scratch: architecture, database, backend and frontend</li>
+            <li>Stack: Next.js, React, TypeScript, Node.js, Drizzle ORM and PostgreSQL, containerized with Docker</li>
+            <li>Previously owned the legacy Programa Salão system in Java / Groovy / Grails: business rules, bug fixes and new features in production</li>
+            <li>Shipped n8n + AI automations and WhatsApp integrations for reminders, confirmations and customer messages</li>
+          </ul>
+        </article>
+        <div class="aside">
+          <article class="panel tilt"><span class="tag muted">EDUCATION</span><h3 style="font-size:18px;margin-top:8px">B.Sc. Software Engineering</h3><p class="muted" style="margin:4px 0 0">UniBrasil · graduating 2027</p></article>
+          <article class="panel tilt"><span class="tag muted">LANGUAGES</span><h3 style="font-size:18px;margin-top:8px">English — TOEIC 840</h3><p class="muted" style="margin:4px 0 0">Portuguese — native</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="panel about tilt">
+        <div class="about-txt">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2 style="margin-bottom:20px">Hi, I'm Gabriel.</h2>
+          <p class="muted" style="font-size:18px;margin:0 0 16px;max-width:560px">I'm a software engineer who likes taking systems apart until I understand them, then making them better. At my current job that meant learning a legacy Grails system inside out, then rebuilding the whole product from scratch on a modern stack.</p>
+          <p class="muted" style="font-size:18px;margin:0;max-width:560px">I'm finishing my Software Engineering degree at UniBrasil and looking for a team where I can grow into a strong full-stack engineer. Outside work I build PCs and play competitive CS2 as <span class="mono" style="color:var(--fg)">Ghxst</span>.</p>
+          <div class="btns"><a class="btn primary" href="#contact">Let's talk</a><a class="btn ghost" href="https://www.linkedin.com/in/gabrielcolis" target="_blank" rel="noopener">LinkedIn profile</a></div>
+        </div>
+        <figure class="portrait">
+          <img src="/img/portrait.webp" alt="Gabriel Colis in a dark suit" width="480" height="600">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="bring">
+    <div class="wrap">
+      <p class="eyebrow">WHAT I BRING</p>
+      <h2>What I can do for your team</h2>
+      <div class="bento">
+        <article class="panel b-big tilt">
+          <span class="tag" style="color:var(--accent)">LEGACY → MODERN</span>
+          <h3 style="font-size:clamp(24px,3vw,34px);line-height:1.1;letter-spacing:-.02em;max-width:460px">I rebuilt a production SaaS from scratch, after learning its legacy code inside out.</h3>
+          <p class="muted" style="margin:0;max-width:480px">From the Postgres schema to the last screen, I designed and built the new platform while the old one kept customers running.</p>
+        </article>
+        <article class="panel tilt"><span class="tag muted">IN PRODUCTION</span><p class="big-num">1.5<small> yrs</small></p><p class="muted" style="margin:0;font-size:14px">on a SaaS with real customers</p></article>
+        <article class="panel tilt"><span class="tag muted">ENGLISH</span><p class="big-num">840</p><p class="muted" style="margin:0;font-size:14px">TOEIC · ready for global teams</p></article>
+        <article class="panel tilt"><span class="tag" style="color:var(--jade)">AUTOMATION &amp; AI</span><h3 style="font-size:20px">Automate the boring parts</h3><p class="muted" style="margin:0;font-size:14px">n8n + AI workflows that save support and dev time, wired into real products.</p></article>
+        <article class="panel b-cta tilt"><span class="tag">STATUS</span><h3 style="font-size:22px;margin-top:auto;line-height:1.15">Open to backend &amp; full-stack roles</h3><a href="#contact">Let's talk →</a></article>
+        <article class="panel b-wide tilt">
+          <span class="tag muted">STACK</span>
+          <div class="stackcols">
+            <div><p class="k">BACKEND</p><p>Java · Groovy · Grails · Node.js</p></div>
+            <div><p class="k">FRONTEND</p><p>Next.js · React · Tailwind</p></div>
+            <div><p class="k">DATA &amp; INFRA</p><p>PostgreSQL · Drizzle · Docker · Redis</p></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="projects">
+    <div class="wrap">
+      <p class="eyebrow">PROJECTS</p>
+      <h2>Selected work</h2>
+      <article class="panel feat tilt">
+        <div class="txt">
+          <span class="tag" style="color:var(--accent)">FEATURED · PROFESSIONAL</span>
+          <h3 style="font-size:36px;letter-spacing:-.02em;margin-top:12px">Programa Salão <span style="font-weight:300;color:var(--muted)">/ Up Agenda</span></h3>
+          <p class="muted" style="margin:12px 0 0">Scheduling and management SaaS for salons, barbershops and clinics, sold under two brands on the same codebase. Online booking, appointments per professional, plans billed by agenda, and a WhatsApp module for reminders and confirmations.</p>
+          <div class="stats"><div><b>10,000+</b><span>professionals served</span></div><div><b>4M+</b><span>appointments booked</span></div></div>
+          <p style="margin:16px 0 0;color:var(--fg)"><b>My part:</b> I built this platform from scratch, end to end: architecture, data model, backend, frontend and the WhatsApp module. It replaced the legacy Grails system I used to maintain.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-weight:600"><a href="https://app.programasalao.com.br/" target="_blank" rel="noopener" style="padding:4px 0">programasalao.com.br ↗</a><a href="https://upagenda.com.br/" target="_blank" rel="noopener" style="padding:4px 0">upagenda.com.br ↗</a></div>
+          <div class="chips"><span>Next.js 16</span><span>TypeScript</span><span>Tailwind</span><span>Drizzle</span><span>PostgreSQL</span></div>
+        </div>
+        <div class="shot"><div class="shots">
+            <img class="s1" src="/img/programa-salao-home.webp" alt="Programa Salão landing page: smarter scheduling for salons" width="1000" height="398">
+            <img class="s2" src="/img/programa-salao-features.webp" alt="Programa Salão / Up Agenda features: online booking 24h, automatic reminders, multi-professional agenda" width="900" height="425">
+          </div></div>
+      </article>
+      <div class="cards">
+        <article class="panel tilt"><span class="tag" style="color:var(--jade)">AUTOMATION</span><h3 style="font-size:22px">WhatsApp + n8n + AI workflows</h3><p class="muted" style="margin:0;font-size:15px">Automated reminders, confirmations and customer replies connecting n8n, Redis, Google Sheets and AI models to a scheduling system.</p><div class="chips"><span>n8n</span><span>Redis</span><span>LLM APIs</span></div></article>
+        <article class="panel tilt"><span class="tag muted">LEGACY SYSTEM</span><h3 style="font-size:22px">Programa Salão legacy (Grails)</h3><p class="muted" style="margin:0;font-size:15px">Owned the original Java/Groovy/Grails system in production: business rules, bug fixes and new features for paying customers, until the new platform took over.</p><div class="chips"><span>Java</span><span>Groovy</span><span>Grails</span></div></article>
+        <article class="panel tilt"><span class="tag muted">WRITING</span><h3 style="font-size:22px">Junior Developer Survival Guide</h3><p class="muted" style="margin:0;font-size:15px">An e-book on what nobody tells you in your first dev job: legacy code, tickets, code review and asking for help.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Looking for a developer who ships? Let's talk.</h2>
+      <p class="muted" style="margin:0 auto;max-width:520px;font-size:17px">Open to backend and full-stack roles, remote or in Curitiba. English or Portuguese.</p>
+      <div class="mail"><code id="email">gabrielhcolis@gmail.com</code><button type="button" id="copy">Copy email</button></div>
+      <div class="links"><a href="https://www.linkedin.com/in/gabrielcolis" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/gabrielcolis" target="_blank" rel="noopener">GitHub</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Gabriel Henrique Colis · Vite, TypeScript &amp; Three.js</span>
+    <button type="button" class="seal" id="seal" aria-label="A small golden seal">天</button>
+  </div>
+</footer>
+
+<div id="realm" hidden role="dialog" aria-modal="true" aria-labelledby="realmTitle">
+  <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+  <div class="mtn" aria-hidden="true">
+    <div style="height:70%;clip-path:polygon(0 100%,0 40%,22% 8%,40% 46%,58% 20%,100% 100%)"></div>
+    <div style="height:100%;background:#0C1835;clip-path:polygon(0 100%,30% 30%,50% 0,70% 34%,100% 100%)"></div>
+    <div style="height:65%;clip-path:polygon(0 100%,36% 18%,60% 44%,82% 6%,100% 30%,100% 100%)"></div>
+  </div>
+  <button type="button" class="close" id="realmClose">← Return to the mortal world</button>
+  <img class="dragon" src="/img/pet-qinglong.webp" alt="" aria-hidden="true">
+  <div class="inner">
+    <span class="k">YOU FOUND THE HIDDEN REALM</span>
+    <h2 id="realmTitle" style="margin:0"><img class="wm" src="/img/celestial-wordmark.webp" alt="Celestial Realms" width="640" height="201"></h2>
+    <p>A mobile city-builder strategy game in a Xianxia world: raise your sect, recruit heroes and tame legendary beasts. My after-hours project, built in Unity.</p>
+    <div class="roster" role="list" aria-label="Heroes and spirit beasts">
+      <figure role="listitem"><img src="/img/hero-baofeng.webp" alt="Bao Feng"><figcaption>Bao Feng<small>Hero</small></figcaption></figure>
+      <figure role="listitem"><img src="/img/hero-limeiying.webp" alt="Li Meiying"><figcaption>Li Meiying<small>Hero</small></figcaption></figure>
+      <figure role="listitem"><img src="/img/hero-xuanmiao.webp" alt="Xuan Miao"><figcaption>Xuan Miao<small>Hero</small></figcaption></figure>
+      <figure role="listitem"><img src="/img/pet-baihu.webp" alt="Baihu"><figcaption>Baihu<small>Legendary beast</small></figcaption></figure>
+      <figure role="listitem"><img src="/img/pet-raiju.webp" alt="Raiju"><figcaption>Raiju<small>Epic beast</small></figcaption></figure>
+    </div>
+    <span class="hint">Unity · C# · city builder strategy</span>
+  </div>
+</div>
+<script type="module" src="/src/main.ts"></script>
+</body>
 </html>
